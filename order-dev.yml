@@ -23,6 +23,8 @@ spring:
   rabbitmq:
     addresses: 47.106.84.237
     port: 5762
+    username: admin
+    password: admin
 
 eureka:
   client:
