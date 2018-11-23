@@ -20,6 +20,9 @@ spring:
           slow-sql-millis: 2000
   jpa:
     show-sql: true
+  rabbitmq:
+    addresses: 47.106.84.237
+    port: 5762
 
 eureka:
   client:
