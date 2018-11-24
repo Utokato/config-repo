@@ -33,5 +33,5 @@ eureka:
 env:
   dev
 girl:
-  name: zual
+  name: azul
   age: 19
