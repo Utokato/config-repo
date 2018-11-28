@@ -1,5 +1,7 @@
 # 可以使用 application/routes 查看所有的路由
 zuul:
+  # 全部服务忽略敏感头(全部服务都可以传递cookie)
+  sensitive-headers:
   routes:
     # /myProduct/** 映射到--> /product/**
     # 下面的配置可简写
