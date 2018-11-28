@@ -1,0 +1,22 @@
+# 可以使用 application/routes 查看所有的路由
+zuul:
+  routes:
+    # /myProduct/** 映射到--> /product/**
+    # 下面的配置可简写
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      # 将敏感头设置为空，cookie等信息就可以传递到后台
+      sensitiveHeaders:
+
+    # product: /myProduct/**
+  # 禁止某些路由
+  ignored-patterns:
+  - /**/product/listForOrder
+
+# 暴露所有的映射路由
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
